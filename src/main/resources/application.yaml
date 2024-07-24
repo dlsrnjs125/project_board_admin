@@ -6,6 +6,7 @@ logging:
     com.fastcampus.board_project: debug
     org.springframework.web.servlet: debug
     org.hibernate.orm.jdbc.bind: trace
+    org.springframework.web.client.RestTemplate: debug
 
 server.port: 8081
 
