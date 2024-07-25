@@ -1,6 +1,6 @@
 package com.fascampus.project_board_admin.controller;
 
-import com.fascampus.project_board_admin.config.SecurityConfig;
+import com.fascampus.project_board_admin.config.TestSecurityConfig;
 import com.fascampus.project_board_admin.dto.UserAccountDto;
 import com.fascampus.project_board_admin.service.UserAccountManagementService;
 import org.junit.jupiter.api.DisplayName;
@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @DisplayName("컨트롤러 - 회원 관리")
-@Import(SecurityConfig.class)
+@Import(TestSecurityConfig.class)
 @WebMvcTest(UserAccountManagementController.class)
 class UserAccountManagementControllerTest {
 
