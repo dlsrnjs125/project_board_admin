@@ -1,6 +1,5 @@
 package com.fascampus.project_board_admin.service;
 
-import com.fascampus.project_board_admin.domain.constant.RoleType;
 import com.fascampus.project_board_admin.dto.ArticleDto;
 import com.fascampus.project_board_admin.dto.UserAccountDto;
 import com.fascampus.project_board_admin.dto.properties.ProjectProperties;
@@ -22,7 +21,6 @@ import org.springframework.test.web.client.MockRestServiceServer;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.method;
@@ -111,9 +109,9 @@ class ArticleManagementServiceTest {
             server.verify();
         }
 
-        @DisplayName("게시글 ID와 함께 게시글 API을 호출하면, 게시글을 가져온다.")
+        @DisplayName("게시글 API을 호출하면, 게시글을 가져온다.")
         @Test
-        void givenArticleId_whenCallingArticleApi_thenReturnsArticle() throws Exception {
+        void givenNothing_whenCallingArticleApi_thenReturnsArticle() throws Exception {
             // Given
             Long articleId = 1L;
             ArticleDto expectedArticle = createArticleDto("게시판", "글");
@@ -138,7 +136,7 @@ class ArticleManagementServiceTest {
 
         @DisplayName("게시글 ID와 함께 게시글 삭제 API을 호출하면, 게시글을 삭제한다.")
         @Test
-        void givenArticleId_whenCallingDeleteArticleApi_thenDeletesArticle() throws Exception {
+        void givenArticleId_whenCallingDeleteArticleApi_thenDeletesAnArticle() throws Exception {
             // Given
             Long articleId = 1L;
             server
