@@ -70,7 +70,7 @@ class UserAccountManagementControllerTest {
         then(userAccountManagementService).should().getUserAccount(userId);
     }
 
-    @WithMockUser(username = "tester", roles = "USER")
+    @WithMockUser(username = "tester", roles = "MANAGER")
     @DisplayName("[view][POST] 회원 삭제 - 정상 호출")
     @Test
     void givenUserAccountId_whenRequestingDeletion_thenRedirectsToUserAccountManagementView() throws Exception {
