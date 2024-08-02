@@ -17,7 +17,7 @@ function sendMessage() {
     $(".direct-chat-messages").append(`
         <div class="direct-chat-msg">
             <div class="direct-chat-infos clearfix">
-                <span class="direct-chat-name float-left">Uno</span>
+                <span class="direct-chat-name float-left">Inkwon</span>
             </div>
             <div class="direct-chat-text">
                 ${message}
