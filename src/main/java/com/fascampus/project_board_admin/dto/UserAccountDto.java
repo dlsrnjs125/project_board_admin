@@ -1,9 +1,6 @@
 package com.fascampus.project_board_admin.dto;
 
-import com.fascampus.project_board_admin.domain.constant.RoleType;
-
 import java.time.LocalDateTime;
-import java.util.Set;
 
 public record UserAccountDto(
         String userId,
