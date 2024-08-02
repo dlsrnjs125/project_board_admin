@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.fastcampus'
-version = 'v1.1'
+version = 'v1.0'
 
 java {
     sourceCompatibility = '17'
